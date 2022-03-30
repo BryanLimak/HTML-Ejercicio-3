@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <style>
+    tr,
+    td {
+      border: 1px solid black;
+      width: 80px;
+      text-align: center;
+    }
+    caption {
+      width: 260px;
+      border: 1px solid black;
+    }
+    .tabla-2 {
+      margin-top: 100px;
+    }
+  </style>
+  <body>
     <header>
-        <h1>Patatas fritas</h1>
+      <h1>Ejercicio de tablas</h1>
     </header>
     <main>
-        <p>Receta de patatas fritas caseras.</p>
-        <img src="descarga.jpg">
-        <div class="lista-1">
-            <h3>Ingredientes</h3>
-            <ul>
-                <li>3 o 4 patatas (300g)</li>
-                <li>4 dientes de ajo</li>
-                <li>Aceite de oliva</li>
-                <li>Sal</li>
-            </ul>
-        </div>
-        <div class="lista-2">
-            <h3>Elaboración (Passos)</h3>
-            <ol>
-                <li>Calentar aceite en una sartén</li>
-                <li>Añadir las patatas cortadas, la sal y los ajos.</li>
-                <li>Freir al gusto.</li>
-                <li>Servir en plato.</li>
-            </ol>
-        </div>
+      <div class="tabla-1" style="width: 50%">
+        <table>
+          <caption>
+            Ejercicio [Tabla-1]
+          </caption>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tfoot>
+            <td colspan="3">Apartado A</td>
+          </tfoot>
+        </table>
+      </div>
+      <div class="tabla-2" style="width: 50%">
+        <table>
+          <caption>
+            Ejercicio [Tabla-2]
+          </caption>
+          <tr>
+            <td rowspan="2">A</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td colspan="2">2</td>
 
+            <td>3</td>
+          </tr>
+          <tfoot>
+            <td colspan="3">Apartado B</td>
+          </tfoot>
+        </table>
+      </div>
     </main>
-</body>
+  </body>
 </html>
